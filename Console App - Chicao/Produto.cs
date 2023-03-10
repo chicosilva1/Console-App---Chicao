@@ -19,8 +19,23 @@ namespace Console_App___Chicao
             Descricao = descricao;  
         }
         public string getDescricao() => Descricao;
+
+        public void setDescricao(string descricao)
+        {
+            Descricao = descricao;
+        }
         public int getId() => Id;
+
+        public void setId(int id)
+        {
+            Id = id;
+        }
         public decimal getValor() => Valor;
+
+        public void setValor(decimal valor)
+        {
+            Valor = valor;
+        }
 
     }
 }
