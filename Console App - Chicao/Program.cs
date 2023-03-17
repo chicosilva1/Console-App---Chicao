@@ -26,3 +26,4 @@ Cliente c5 = new Cliente(5, "E", "991340452", endereco);
 
 
 Console.WriteLine(c2.GetEndereco().GetRua() + " "+ c2.GetEndereco().getN());
+Console.WriteLine(c2.GetEndereco().EnderecoCompleto())

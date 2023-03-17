@@ -24,6 +24,29 @@ namespace Console_App___Chicao
             Cidade = cidade;
             Estado = estado;
         }
+        public string EnderecoCompleto()
+        {
+            return Rua + ", " + N + " Bairro:" + Bairro + "Cidade: " + Cidade + "/" + Estado;
+        }
+
+        public Endereco BuscaporCep(string cep)
+        {
+            return new Endereco("",5, "", cep, "", "");
+        }
+        public string EstadoPorCidade(string estado)
+        {
+            if(Estado == "sp")
+            {
+                return "Monte Alto"
+            }
+            return Cidade;
+        }
+
+        public void InserirNoBanco(Endereco endereco)
+        {
+            //db.ENDERECO.ADD(endereco)
+            //db.savechanges();
+        }
         public string GetRua() => Rua;
         public void setRua(string rua) 
             { 
