@@ -18,6 +18,8 @@ namespace Console_App___Chicao
             Valor = valor; 
             Descricao = descricao;  
         }
+        public string ExibirDados()
+        { return " Descrição do Item: " + Descricao + "O ID é: " + Id + " Valor do item: R$" + Valor; }
         public string getDescricao() => Descricao;
 
         public void setDescricao(string descricao)

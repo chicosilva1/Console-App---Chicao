@@ -1,5 +1,6 @@
 ﻿using Console_App___Chicao;
 using Console_App___Chicao.HERANCA;
+using System.Net;
 
 Produto p1 = new Produto(1, 10.90M, "Cervejinha");
 
@@ -45,14 +46,37 @@ caloi.numeroAssentos = 1;
 Carro ecosport = new Carro();
 Carro Santana = new Carro();
 
-Santana.fabricante = "Fiat";
-ecosport.fabricante = "VW";
+Santana.fabricante = "WM";
+ecosport.fabricante = "FORD";
 
 Bike speed = new Bike();
 speed.TemMotor = false;
 speed.numeroPortas = 0;
 speed.numeroAssentos = 1;
 
-Console.WriteLine(speed.ExibirDados());
-Console.WriteLine(gol.ExibirDados());
+//Console.WriteLine(speed.ExibirDados());
+//Console.WriteLine(gol.ExibirDados());
 
+List<Carro> listaCarros = new List<Carro>();    
+listaCarros.Add(ecosport);
+listaCarros.Add(Santana);
+listaCarros.Add(gol);
+
+//Console.WriteLine(listaCarros[0].fabricante);
+
+foreach(var item in listaCarros)
+{
+    //Console.WriteLine(item.ExibirMarca());
+}
+int i;
+List<Produto> listaProdutos = new List<Produto>();
+for (i = 0; i < 560; i++)
+{
+    Produto p = new Produto(i, i*64M,"A:" + i);
+
+    listaProdutos.Add(p);
+}
+foreach (var item in listaProdutos)
+{
+    Console.WriteLine(item.ExibirDados());
+}
