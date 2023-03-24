@@ -11,8 +11,11 @@ namespace Console_App___Chicao.HERANCA
         public bool cintoSeguranca;
         public bool ArCondicionado;
         public string marcaRadio;
+
         public string fabricante;
-        
+
+
+
         public string ExibirMarca()
         {
             return "O fabricante deste veiculo é: " + fabricante;

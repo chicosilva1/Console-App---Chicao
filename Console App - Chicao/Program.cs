@@ -1,5 +1,6 @@
 ﻿using Console_App___Chicao;
 using Console_App___Chicao.HERANCA;
+using System.Drawing;
 using System.Net;
 
 Produto p1 = new Produto(1, 10.90M, "Cervejinha");
@@ -46,7 +47,18 @@ caloi.numeroAssentos = 1;
 Carro ecosport = new Carro();
 Carro Santana = new Carro();
 
-Santana.fabricante = "WM";
+Santana.TemMotor = true;
+Santana.numeroPortas = 4;
+Santana.numeroAssentos = 5;
+Santana.cintoSeguranca = true;
+Santana.ArCondicionado = true;
+Santana.fabricante = "VM";
+
+ecosport.TemMotor = true;
+ecosport.numeroPortas = 4;
+ecosport.numeroAssentos = 5;
+ecosport.cintoSeguranca = true;
+ecosport.ArCondicionado = true;
 ecosport.fabricante = "FORD";
 
 Bike speed = new Bike();
@@ -83,3 +95,40 @@ foreach (var item in listaProdutos)
 {
     Console.WriteLine(item.ExibirDados());
 }
+// Imprima na tela todos os clientes desse contexto,
+// Dica crie uma lista para eles.
+Console.WriteLine("\n\nCriando uma lista  clientes e  exibindo os dados deles");
+List<Cliente> listaClientes = new List<Cliente>();
+
+listaClientes.Add(c1);
+listaClientes.Add(c2);
+listaClientes.Add(c3);
+listaClientes.Add(c4);
+listaClientes.Add(c5);
+
+foreach (var item in listaClientes)
+{
+    Console.WriteLine(item.ExibeDadosClientes());
+}
+
+Console.WriteLine("\n\nex03\n");
+
+
+List<Veiculo> listaVeiculos = new List<Veiculo>();
+
+listaVeiculos.Add(gol);
+listaVeiculos.Add(Santana);
+listaVeiculos.Add(ecosport);
+listaVeiculos.Add(speed);
+listaVeiculos.Add(caloi);
+
+foreach (var item in listaVeiculos)
+{
+    Console.WriteLine(item.ExibirDados());
+}
+
+
+
+
+
+

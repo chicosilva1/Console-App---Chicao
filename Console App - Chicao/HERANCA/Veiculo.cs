@@ -12,13 +12,7 @@ namespace Console_App___Chicao.HERANCA
         public int numeroPortas;
         public bool TemMotor;
 
-    
-   // public Veiculo(int numeroassentos, int numeroportas, bool temmotor)
-   // {
-       // numeroassentos = numeroAssentos;
-       // numeroportas = numeroPortas;
-       // temmotor = TemMotor;
-    //}
+  
        public string ExibirDados()
         {
             if(TemMotor == true) { 

@@ -9,5 +9,6 @@ namespace Console_App___Chicao.HERANCA
     public class Bike : Veiculo
     {
         public int velocidadeMaximaEmKmH;
+
     }
 }

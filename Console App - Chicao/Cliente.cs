@@ -21,6 +21,11 @@ namespace Console_App___Chicao
             Telefone = telefone;
             Endereco = endereco;
         }
+
+        public string ExibeDadosClientes()
+        {
+            return "O id é:" + Id + "O nome do cliente é: " + Nome + " O telefone: " + Telefone;
+        }
         public void SetEndereco(Endereco endereco) {  Endereco = endereco; }
         public Endereco GetEndereco() => Endereco;
         public int getId() => Id;
